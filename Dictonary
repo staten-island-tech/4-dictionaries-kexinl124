@@ -1,0 +1,7 @@
+def store(items):
+    items = {"name": "water",
+    "price": "$2.00 " ,
+    "department": " liquid "},
+    {"name": "orange juice",
+    "price": "$5.00" ,
+    "department": " "}
