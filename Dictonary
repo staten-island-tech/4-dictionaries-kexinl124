@@ -1,7 +1,17 @@
-def store(items):
+def store(store_items):
     items = {"name": "water",
     "price": "$2.00 " ,
-    "department": " liquid "},
-    {"name": "orange juice",
+    "department": "liquid/beverages"}
+
+    items = {"name": "orange juice",
     "price": "$5.00" ,
-    "department": " "}
+    "department": "liquid/beverages"}
+    
+    items = {"name":"strawberry ",
+     "price":"$6.50",
+     "department":"fruits"}
+    
+    for index, items in enumerate(store_items):
+     print(index, ":", items["name"])
+    
+    
