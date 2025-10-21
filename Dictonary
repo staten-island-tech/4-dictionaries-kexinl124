@@ -1,17 +1,35 @@
-def store(store_items):
-    items = {"name": "water",
-    "price": "$2.00 " ,
-    "department": "liquid/beverages"}
+def store(total_items):
+     
+     total_items=[]
 
-    items = {"name": "orange juice",
-    "price": "$5.00" ,
-    "department": "liquid/beverages"}
+     item = {
+        "name": "water",
+        "price": 2.00,
+        "department": "liquid/beverages"
+        },
+     
+     item = {
+        "name": "orange juice",
+        "price": 4.00,
+        "department": "liquid/beverages"
+        },
     
-    items = {"name":"strawberry ",
-     "price":"$6.50",
-     "department":"fruits"}
+     item = {
+        "name":"strawberry ",
+        "price": 6.50,
+        "department":"fruits"
+        },
     
-    for index, items in enumerate(store_items):
-     print(index, ":", items["name"])
+     item = {
+        "name":"milk",
+        "price": 5.00,
+        "department":"liquid/beverages"
+        }
+     
+     for index, item in enumerate(total_items):
+      print(index, ":", item["name"])
+
+     
+    
     
     
