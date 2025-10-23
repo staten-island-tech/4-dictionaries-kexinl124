@@ -1,5 +1,4 @@
 def store(total_items):
-     
      total_items=[]
 
      item = {
@@ -28,6 +27,13 @@ def store(total_items):
      
      for index, item in enumerate(total_items):
       print(index, ":", item["name"])
+
+      while cart!="done":
+         cart = input("")
+         
+        
+      
+
 
      
     
