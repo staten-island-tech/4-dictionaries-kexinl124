@@ -1,35 +1,28 @@
-def store(total_items):
-     total_items=[]
+total_items = {
 
-     item = {
-        "name": "water",
+       "name": "water",
         "price": 2.00,
-        "department": "liquid/beverages"
-        },
-     
-     item = {
-        "name": "orange juice",
-        "price": 4.00,
-        "department": "liquid/beverages"
-        },
-    
-     item = {
-        "name":"strawberry ",
-        "price": 6.50,
-        "department":"fruits"
-        },
-    
-     item = {
-        "name":"milk",
+        "department": "liquid/beverages",
+
+       "name": "orange juice",
+      "price": 4.00,
+      "department": "liquid/beverages",
+
+         "name":"strawberry ",
+         "price": 6.50,
+         "department":"fruits",
+
+         "name":"milk",
         "price": 5.00,
         "department":"liquid/beverages"
-        }
-     
-     for index, item in enumerate(total_items):
-      print(index, ":", item["name"])
 
-      while cart!="done":
-         cart = input("")
+}
+        
+ 
+for index, item in enumerate(total_items):
+   print(index, ":", (total_items)["name"])
+   total_items[0]["name"]
+
          
         
       
