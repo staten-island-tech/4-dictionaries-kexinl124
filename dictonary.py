@@ -1,8 +1,3 @@
-def store():
-   print("welcome to my store")
-choice=0   
-cart=[]
-
 total_items = [
 
        {"name": "water",
@@ -23,10 +18,48 @@ total_items = [
 
 ]
 for index, item in enumerate(total_items):
-   print(index, ":", (item)["name"])
-   total_items[0]["name"]
+   print(index, ":", (item)["name"],(item)["price"])
+   total_items["name"]["price"]
 
+   cart=[]
+   choice=0
+   total_cost=0
+
+   print("Welcome to store")
    while choice != "done":
-      input("Keep shopping. When done say done:")
-      cart.append("item")
+      choose=(item)["name","price"]
+      choose=input("Choose what you want by stating the name. When done say done:")
+      cart.append(choose)
+      print(f"You added {cart} into your cart")
+   print("")
 
+
+
+
+
+
+
+
+
+
+""" class Calculator():
+   def add(x,y):
+      print(x+y)
+      return x+y
+   def add_many(list):
+      print(sum(list))
+      return(sum(list))
+   def subtract(list):
+      return list
+Calculator.add(15,5) """
+""" class Hero:
+   def_init_(self,name,money,inventory):
+    self.name=name
+    self.money=money
+    self.inventory=inventory
+   def buy(self,item):
+     self.inventory.append(item)
+     print(f"{self.name} purchased {item} and has {self.item}")
+Nathan=Hero("Nathan",0,["Pencil"])
+print(Nathan._dict_)
+Nathan.buy("Xi Yang") """
