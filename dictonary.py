@@ -18,8 +18,8 @@ total_items = [
 
 ]
 for index, item in enumerate(total_items):
-   print(index, ":", (item)["name"],(item)["price"])
-   total_items["name"]["price"]
+   print(index, ":", (item)["name"],(item)["price"],(item)["department"])
+   
 
    cart=[]
    choice=0
@@ -28,10 +28,13 @@ for index, item in enumerate(total_items):
    print("Welcome to store")
    while choice != "done":
       choose=(item)["name","price"]
-      choose=input("Choose what you want by stating the name. When done say done:")
+      choose=input("Choose what you want. When done say done:")
       cart.append(choose)
       print(f"You added {cart} into your cart")
-   print("")
+      if choice == "done":
+        print(f"Ok, you finish shopping. Here is your total cost{total_cost}")
+
+
 
 
 
