@@ -18,29 +18,31 @@ total_items = [
 
 ]
 for index, item in enumerate(total_items):
-   print(index, ":", (item)["name"],item["price"])
+      print(index, ":", (item)["name"])
+      total_items[0]["name"]
+print("Welcome to the store.")
+cart=[]
+cost=0
+choice=int(input("Choose your item(s)"))
+cart.append(total_items[choice])
+print(f"You added {total_items[choice]['name']} into your cart")
+cost += total_items[choice]["price"]
 
-   print(f"Welcome to the store. Here are the items{total_items}")
-   cart=[]
-   choice=0
-   total_cost=0
-   choice=input("Choose your item(s)")
-   
-   checkout=input("Do you wish to continue shopping?(yes/no)")
 
-   while checkout!="no":
-        if choice==len(total_items):
-          cart.append(input(choice))
-          total_cost+=total_items[choice]["price"]
-          print(f"You added {cart} into your cart")
-          checkout=input("Do you wish to continue shopping?(yes/no)")
-   else:
-         print("Sorry, we do not have that item")
-   if checkout == "No":
-         break
-   for item in cart: 
-    print(f"{item['name']} ${item['price']}")
-    print(f"Total: ${total_cost}")
+while True:
+      checkout=input("Do you wish to continue shopping?(yes/no)")
+      if checkout=="yes":
+             choice= int(input("What else would you like to buy"))
+      cart.append(total_items[choice])
+      print(f"You added {total_items[choice]['name']} into your cart")
+      cost += total_items[choice]["price"]
+            
+      if checkout=="no":
+          break
+
+for item in cart: 
+              print(f"${int(item['price'])}")
+print(f"Total: ${cost}")
    
              
          
