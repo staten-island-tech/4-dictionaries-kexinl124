@@ -41,7 +41,7 @@ while True:
           break
 
 for item in cart: 
-              print(f"${int(item['price'])}")
+              print(f"{int(item["price"])}${int(item['price'])}")
 print(f"Total: ${cost}")
    
              
