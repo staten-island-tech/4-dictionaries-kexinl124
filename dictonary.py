@@ -19,7 +19,7 @@ total_items = [
 ]
 for index, item in enumerate(total_items):
       print(index, ":", (item)["name"])
-      total_items[0]["name"]
+     
 print("Welcome to the store.")
 cart=[]
 cost=0
@@ -32,7 +32,7 @@ cost += total_items[choice]["price"]
 while True:
       checkout=input("Do you wish to continue shopping?(yes/no)")
       if checkout=="yes":
-             choice= int(input("What else would you like to buy"))
+               choice= int(input("What else would you like to buy"))
       cart.append(total_items[choice])
       print(f"You added {total_items[choice]['name']} into your cart")
       cost += total_items[choice]["price"]
@@ -41,7 +41,7 @@ while True:
           break
 
 for item in cart: 
-              print(f"{int(item["price"])}${int(item['price'])}")
+              print(f"{int(item['name'])}${int(item['price'])}")
 print(f"Total: ${cost}")
    
              
