@@ -26,7 +26,7 @@ cost=0
 choice=int(input("Choose your item(s)"))
 cart.append(total_items[choice])
 print(f"You added {total_items[choice]['name']} into your cart")
-cost += total_items[choice]["price"]
+cost += total_items[choice]['price']
 
 
 while True:
@@ -35,13 +35,13 @@ while True:
                choice= int(input("What else would you like to buy"))
       cart.append(total_items[choice])
       print(f"You added {total_items[choice]['name']} into your cart")
-      cost += total_items[choice]["price"]
+      cost += total_items[choice]['price']
             
       if checkout=="no":
           break
 
 for item in cart: 
-              print(f"{int(item['name'])}${int(item['price'])}")
+  print(f"{(item['name'])}${int(item['price'])}")
 print(f"Total: ${cost}")
    
              
