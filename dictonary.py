@@ -51,8 +51,6 @@ while True:
             print("say yes/no")
 
 
-
-
 for item in cart:
       print(f"{(item['name'])}, ${int(item['price'])}")
 print(f"Total: ${cost}")
