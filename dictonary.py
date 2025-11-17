@@ -1,6 +1,5 @@
 total_items = [
 
-
        {"name": "water",
         "price": 2.00,
         "department": "liquid/beverages"},
@@ -32,9 +31,6 @@ choice=int(input("Choose your item(s)"))
 cart.append(total_items[choice])
 print(f"You added {total_items[choice]['name']} into your cart")
 cost += total_items[choice]['price']
-
-
-
 
 while True:
       checkout=input("Do you wish to continue shopping?(yes/no)")
