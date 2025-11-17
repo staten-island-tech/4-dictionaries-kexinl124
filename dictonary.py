@@ -54,7 +54,7 @@ while True:
 
 
 for item in cart:
-      print(f"{(item['name'])}, ${float(item['price'])}")
+      print(f"{(item['name'])}, ${int(item['price'])}")
 print(f"Total: ${cost}")
 
    
